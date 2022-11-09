@@ -1,4 +1,4 @@
-module github.com/mattermost/mattermost-plugin-starter-template
+module github.com/claudiaifrim/mattermost-plugin-ecas
 
 go 1.16
 
