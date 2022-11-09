@@ -1,6 +1,6 @@
 {
     "id": "com.mattermost.ecas-plugin",
-    "name": "ECAS Auth",
+    "name": "ECAS Authentication",
     "description": "EU Login Mattermost plugin.",
     "homepage_url": "https://github.com/claudiaifrim/mattermost-plugin-ecas",
     "support_url": "https://github.com/claudiaifrim/mattermost-plugin-ecas/issues",
@@ -21,8 +21,32 @@
         "bundle_path": "webapp/dist/main.js"
     },
     "settings_schema": {
-        "header": "",
+        "header": "(E)CAS Authentication Configuration",
         "footer": "",
-        "settings": []
+        "settings": [{
+            "key":"ecas_auth_on",
+            "display_name": "Enable authentication with EU Login",
+            "help_text": "When true, EU Login option will be enabled.",
+            "type": "bool",
+            "default": "false"
+        },{
+            "key":"ecas_server_hostname",
+            "display_name": "(E)CAS Server Hostname",
+            "help_text": "Add (E)CAS Server Hostname",
+            "type": "text",
+            "default": "https://webgate.acceptance.ec.europa.eu/"
+        },{
+            "key":"ecas_server_port",
+            "display_name": "(E)CAS Server Port",
+            "help_text": "Add (E)CAS Server Port",
+            "type": "text",
+            "default": "443"
+        },{
+            "key":"ecas_server_path",
+            "display_name": "(E)CAS Server Path",
+            "help_text": "Add (E)CAS Server Path",
+            "type": "text",
+            "default": "/cas"
+        }]
     }
 }
