@@ -24,25 +24,25 @@
         "header": "(E)CAS Authentication Configuration",
         "footer": "",
         "settings": [{
-            "key":"ecas_auth_on",
+            "key":"EcasAuthOn",
             "display_name": "Enable authentication with EU Login",
             "help_text": "When true, EU Login option will be enabled.",
             "type": "bool",
             "default": "false"
         },{
-            "key":"ecas_server_hostname",
+            "key":"EcasServerHostname",
             "display_name": "(E)CAS Server Hostname",
             "help_text": "Add (E)CAS Server Hostname",
             "type": "text",
             "default": "https://webgate.acceptance.ec.europa.eu/"
         },{
-            "key":"ecas_server_port",
+            "key":"EcasServerPort",
             "display_name": "(E)CAS Server Port",
             "help_text": "Add (E)CAS Server Port",
             "type": "text",
             "default": "443"
         },{
-            "key":"ecas_server_path",
+            "key":"EcasServerPath",
             "display_name": "(E)CAS Server Path",
             "help_text": "Add (E)CAS Server Path",
             "type": "text",

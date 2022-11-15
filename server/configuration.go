@@ -18,7 +18,15 @@ import (
 // If you add non-reference types to your configuration struct, be sure to rewrite Clone as a deep
 // copy appropriate for your types.
 type configuration struct {
+	EcasAuthOn         bool
+	EcasServerHostname string
+	EcasServerPort     int
+	EcasServerPath     string
 }
+
+const AcceptanceEcasServerHostname = "https://webgate.acceptance.ec.europa.eu/"
+const AcceptanceEcasServerPort = 433
+const AcceptanceEcasServerPath = "/cas"
 
 // Clone shallow copies the configuration. Your implementation may require a deep copy if
 // your configuration has reference types.

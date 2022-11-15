@@ -20,6 +20,14 @@ type Plugin struct {
 	configuration *configuration
 }
 
+func (p *Plugin) OnActivate() error {
+	return nil
+}
+
+func (p *Plugin) OnDeactivate() error {
+	return nil
+}
+
 // ServeHTTP demonstrates a plugin that handles HTTP requests by greeting the world.
 func (p *Plugin) ServeHTTP(c *plugin.Context, w http.ResponseWriter, r *http.Request) {
 	fmt.Fprint(w, "Hello, world!")
